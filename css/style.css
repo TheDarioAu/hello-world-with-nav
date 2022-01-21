@@ -1,4 +1,103 @@
 body{
+    background-color: #edf2f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.introduction, section, footer{
+    background-color: white;
+}
+.introduction, footer{
+    width: 960px;
+}
+h1,span{
+    color: #63b3ed;
+}
+.introduction{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #68778d
+}
+section{
+    width: 300px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+h1{
+    font-size: 125px;
+}
+h2{
+    font-size: 32px;
+    color: #8594ad
+}
+ul {
+    list-style: none;
+}
+li{
+    margin-left: -40px;
+}
+a{
+    font-size: 18px; 
+    text-decoration: none;
+    color: #68778d
+}
+a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #68778d;
+}
+button{
+    font-size: 32px;
+    font-weight: 600;
+    height: 50px;
+    color: white;
+    background-color: #dd6b20;
+    border-color: #dd6b20;
+    border-style: none;
+}
+button:hover {
+    color: gray;
+    background-color: white;
+    border-style: solid;
+}
+.introduction > h1{
+    margin-left: 315px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+.introduction > h2{
+    margin-left: 160px;
+}
+.introduction > button{
+    margin-left: 20px;
+}
+section > h2{
+    margin-bottom: 0px;
+}
+section > ul > li{
+    margin-bottom: 10px;
+}
+footer > p{
+    margin-left: 40px;
+}
+.skills{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.container{
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+body{
     font-weight: 400;
     line-height: 1.5;
     font-size: 100%;
@@ -13,7 +112,7 @@ header{
     min-width: 960px;
 }
 
-nav {
+header > nav {
     font-size: 22px;
 }
 
@@ -23,7 +122,7 @@ nav {
     align-items: center;
 }
 
-ul{
+.flex-container > ul{
     display: flex;
 }
 
@@ -31,12 +130,12 @@ ul{
     width: 100px;
 }
 
-li{
+.flex-container > ul > li{
     margin: 0 12px;
 }
 
-a,
-a:hover {
+.nav-button,
+.nav-button:hover {
     border: 1px solid rgb(211,211,211);
     border-radius: 4px;
     padding: 0.25rem 1rem;
@@ -46,6 +145,6 @@ a:hover {
     user-select: none;
 }
 
-a:hover{
+.nav-button:hover{
     box-shadow: 0 0 5px 2px rgb(65,114,238);
 }
